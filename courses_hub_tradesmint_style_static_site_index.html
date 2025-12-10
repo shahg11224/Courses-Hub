@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courses Hub — Trading Education</title>
+  <meta name="description" content="Courses Hub — Professional trading courses, mentorship, and signals." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{--accent:#0b63ff;--dark:#0b1220;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;line-height:1.5;margin:0;color:#0f1724}
+    a{color:var(--accent);text-decoration:none}
+    header{background:linear-gradient(90deg,#07102a 0%, #071b2f 100%);color:white;padding:18px 24px;position:sticky;top:0;z-index:50}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{width:42px;height:42px;border-radius:6px;object-fit:cover}
+    .navlinks{display:flex;gap:18px;align-items:center}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;font-weight:600}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;padding:72px 0}
+    .hero h1{font-size:36px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .card{background:white;border-radius:14px;padding:18px;box-shadow:0 8px 30px rgba(12,20,40,0.08)}
+    .hero-cta{display:flex;gap:12px}
+    .statgrid{display:flex;gap:12px;margin-top:18px}
+    .stat{background:linear-gradient(180deg,#fbfdff,#f5f8ff);padding:12px;border-radius:10px;text-align:center;min-width:100px}
+
+    /* Courses */
+    .section{padding:72px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .course{background:white;border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(12,20,40,0.06)}
+    .course h3{margin:6px 0}
+    .pill{display:inline-block;background:#eef2ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
+
+    /* Pricing */
+    .price-row{display:flex;gap:18px;align-items:stretch}
+    .price-card{flex:1;background:linear-gradient(180deg,#ffffff,#fbfdff);border-radius:12px;padding:20px}
+
+    footer{background:#061224;color:#b7c0cf;padding:40px 0;margin-top:40px}
+    footer a{color:inherit}
+
+    /* Responsive */
+    @media (max-width:960px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:repeat(2,1fr)}.price-row{flex-direction:column}}
+    @media (max-width:640px){.grid{grid-template-columns:1fr}.navlinks{display:none}.hero h1{font-size:26px}.brand img{width:36px;height:36px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="https://images.unsplash.com/photo-1541807084-5c52b6b6d6f7?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="logo">
+        <div>
+          <div style="font-weight:700">Courses Hub</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.8)">Trading education & mentorship</div>
+        </div>
+      </div>
+
+      <nav class="navlinks">
+        <a href="#courses">Courses</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#enroll">Enroll</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Proven trading frameworks. Real edge. Clear execution.</h1>
+        <p>Courses Hub provides hands-on trading courses, mentorship, and trade frameworks built for traders who want to scale from discretionary to professional.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#courses">Explore Courses</a>
+          <a href="#pricing" style="align-self:center; padding:10px 14px; border-radius:8px; background:#f1f5f9; color:var(--dark); font-weight:600">See Pricing</a>
+        </div>
+
+        <div class="statgrid">
+          <div class="stat"><div style="font-weight:800;font-size:18px">30+</div><div style="font-size:13px;color:var(--muted)">Hours of content</div></div>
+          <div class="stat"><div style="font-weight:800;font-size:18px">VSA + Wyckoff</div><div style="font-size:13px;color:var(--muted)">Pro frameworks taught</div></div>
+          <div class="stat"><div style="font-weight:800;font-size:18px">1:1 Mentorship</div><div style="font-size:13px;color:var(--muted)">Live trade reviews</div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0">Featured Course</h3>
+        <p style="color:var(--muted);margin-bottom:12px">The High-Probability FX System — Build a repeatable edge using VSA + Wyckoff.</p>
+        <div style="display:flex;gap:12px;align-items:center">
+          <img src="https://images.unsplash.com/photo-1526378720884-9b5b7f3f4b48?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="course" style="width:90px;height:70px;border-radius:8px;object-fit:cover">
+          <div style="flex:1">
+            <div style="font-weight:700">High-Probability FX System</div>
+            <div style="color:var(--muted);font-size:13px">Self-paced + weekly live coaching</div>
+          </div>
+        </div>
+        <div style="margin-top:14px;display:flex;gap:10px">
+          <a class="btn" href="#enroll">Enroll Now</a>
+          <a href="#courses" style="align-self:center;color:var(--accent);font-weight:600">See syllabus</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+        <h2 style="margin:0">Courses</h2>
+        <div style="color:var(--muted);font-size:14px">Choose a track — beginner to pro</div>
+      </div>
+
+      <div class="grid">
+        <div class="course">
+          <div class="pill">Beginner</div>
+          <h3>Foundations of Price Action</h3>
+          <p style="color:var(--muted);font-size:14px">Core market structure, candlesticks, support/resistance, and simple setups.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+            <div style="font-weight:700">$49</div>
+            <a href="#enroll" style="font-weight:600">Buy</a>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="pill">Intermediate</div>
+          <h3>VSA & Wyckoff Synthesis</h3>
+          <p style="color:var(--muted);font-size:14px">Volume spread analysis combined with Wyckoff phase reads and real examples.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+            <div style="font-weight:700">$199</div>
+            <a href="#enroll" style="font-weight:600">Buy</a>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="pill">Advanced</div>
+          <h3>Execution & Risk Architecture</h3>
+          <p style="color:var(--muted);font-size:14px">Position sizing, trade management, execution routines, and automation basics.</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+            <div style="font-weight:700">$499</div>
+            <a href="#enroll" style="font-weight:600">Buy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2>Pricing Plans</h2>
+      <div style="margin-top:16px" class="price-row">
+        <div class="price-card">
+          <div style="font-weight:800;font-size:20px">Self-Paced</div>
+          <div style="color:var(--muted);margin-top:8px">Lifetime access to course videos and resources.</div>
+          <ul style="margin-top:12px;color:var(--muted)">
+            <li>Video lessons</li>
+            <li>Slides & resources</li>
+            <li>Community access</li>
+          </ul>
+          <div style="margin-top:14px;font-weight:800;font-size:18px">$99</div>
+          <div style="margin-top:12px"><a class="btn" href="#enroll">Get Started</a></div>
+        </div>
+
+        <div class="price-card">
+          <div style="font-weight:800;font-size:20px">Mentorship</div>
+          <div style="color:var(--muted);margin-top:8px">Weekly live calls, trade reviews, and direct feedback.</div>
+          <ul style="margin-top:12px;color:var(--muted)">
+            <li>Weekly group coaching</li>
+            <li>Monthly 1:1 review</li>
+            <li>Access to signals (optional)</li>
+          </ul>
+          <div style="margin-top:14px;font-weight:800;font-size:18px">$499 / month</div>
+          <div style="margin-top:12px"><a class="btn" href="#enroll">Join Mentorship</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Courses Hub</h2>
+      <p style="color:var(--muted);max-width:800px">Courses Hub is founded by traders who built repeatable trading frameworks using VSA and Wyckoff. We teach systematic edge, execution, and risk architecture — not tricks. Our students learn to think like professionals and build a repeatable >edge.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact & Enroll</h2>
+      <div style="display:flex;gap:18px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px" class="card">
+          <h3>Get in touch</h3>
+          <p style="color:var(--muted)">Questions about courses, enterprise licensing, or mentorship?</p>
+          <form onsubmit="handleContact(event)">
+            <input id="name" placeholder="Your name" required style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e6eefc">
+            <input id="email" placeholder="Email" type="email" required style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e6eefc">
+            <textarea id="message" placeholder="Message" rows="4" style="width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e6eefc"></textarea>
+            <div style="display:flex;gap:8px"><button class="btn" type="submit">Send</button><div style="align-self:center;color:var(--muted)">Or email: hello@courseshub.example</div></div>
+          </form>
+        </div>
+
+        <div style="flex:1;min-width:260px" class="card">
+          <h3>Enroll quickly</h3>
+          <p style="color:var(--muted)">Pick a course and checkout via Stripe (demo mode in this template).</p>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <button onclick="fakeCheckout('Foundations',49)" class="btn">Buy Foundations — $49</button>
+            <button onclick="fakeCheckout('VSA Wyckoff',199)" class="btn" style="background:#0b8a5f">Buy VSA — $199</button>
+            <button onclick="fakeCheckout('Mentorship',499)" class="btn" style="background:#6f2bd9">Join Mentorship — $499/mo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>&copy; 2025 Courses Hub — Built for traders</div>
+        <div style="color:var(--muted);font-size:13px">Follow: <a href="#">Twitter</a> · <a href="#">Instagram</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleContact(e){
+      e.preventDefault();
+      alert('Thanks — demo form. Replace with your backend/Email provider.');
+      document.getElementById('name').value='';
+      document.getElementById('email').value='';
+      document.getElementById('message').value='';
+    }
+
+    function fakeCheckout(product,price){
+      alert(product + ' — demo checkout: $' + price + '. Replace with Stripe integration.');
+    }
+  </script>
+</body>
+</html>
